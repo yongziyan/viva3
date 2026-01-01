@@ -1,6 +1,5 @@
 package com.magical.people;
 public class Person{
-    public static void main(String[] args){
 
         private String name;
         private int age;
@@ -9,7 +8,7 @@ public class Person{
         private static int personCount = 0;
         
         //No-argument constructor
-        public Person() {
+        public Person(){
             this.name = "Unknown Student";
             this.age = DEFAULT_AGE;
             personCount++;
@@ -38,11 +37,11 @@ public class Person{
             if(age<0){
                 throw new IllegalArgumentException("Age cannot be negative");
             }
-            this.age;
+            this.age = age;
         }
 
-        public static int getPersonCOunt(){
-            return personCOunt;
+        public static int getPersonCount(){
+            return personCount;
         }
         
         public boolean compareTo(Person other){
@@ -51,5 +50,4 @@ public class Person{
             }
             return this.name.equals(other.name) && this.age == other.age;
         }
-    }
 }
