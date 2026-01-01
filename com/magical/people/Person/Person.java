@@ -1,4 +1,4 @@
-package com.magical.people;
+package com.magical.people.Person;
 public class Person{
 
         private String name;
